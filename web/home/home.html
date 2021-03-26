@@ -11,6 +11,131 @@
     <title>Career Guidance</title>
     <link rel="shortcut icon" type="image" href="C:\Users\HP\Documents\GitHub\sart13\art\images\LOGOS.PNG">
 
+<!--style-->
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  </style>
+
+
 </head>
   <body>
       <!--header-->
@@ -54,6 +179,7 @@
                       <li><a class="dropdown-item" href="#">Commerce</a></li>
                     </ul>
                   </li>
+                
                 </ul>
               </div>
             </div>
@@ -63,6 +189,47 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script> 
           </nav> 
         </div>
       </div>
@@ -71,10 +238,30 @@
         Our project would provide detailed info about every field such as Science, Commerce and Arts right from 11th to Masters and various scholarship which students are not aware of. Recently the Union Cabinet has approved the new National Education Policy (NEP). The App will help the students understand this new system and plan their career with complete information and proper guidance.
       </p>
       <h2>Survey on career options</h2>
-      <img src="C:\Users\HP\Desktop\my web\image\surve.JPEG" alt="" width="400" height="400">  
+      <img src="C:\Users\HP\Desktop\my web\image\surve.JPEG" class="rounded mx-auto d-block" alt="" width="400" height="400" >
+       
 <p>The survey on awareness of career options among Indian students was conducted among 10000 participants. 93% of the Indians are aware of just seven career options even though there are more than 250 career options that can be pursued in India. 
 </p>
- 
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Why to use our system 
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Currently we have schools, government system and various coaching classes who try to provide Guidance and counselling.
+      </li>
+      <li class="list-group-item">Flaw in classes is they try and promote more of their classes and try to convince the students to take the subject their classes conduct the most and does not pay attention on what the students interest are.
+      </li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="bg-light text-center text-lg-start">
   <!-- Grid container -->
@@ -83,12 +270,10 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer Content</h5>
+        <h5 class="text-uppercase">Career Guidance</h5>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
+          A Student initiative 
         </p>
       </div>
       <!--Grid column-->
@@ -123,7 +308,7 @@
             <a href="#!" class="text-dark">Link 1</a>
           </li>
           <li>
-            <a href="#!" class="text-dark">Link 2</a>
+            <a href="#!  " class="text-dark">Link 2</a>
           </li>
           <li>
             <a href="#!" class="text-dark">Link 3</a>
