@@ -3,7 +3,7 @@
  *	v1.3.3
  */
 
-/* clearfix */
+/* clearfix banner */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
 	display: block;

@@ -243,7 +243,7 @@ th {
     background: #fff !important;
   }
   .navbar {
-    display: none;
+    display: inline;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -2983,7 +2983,7 @@ select[multiple].form-group-lg .form-control {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 16px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -4159,9 +4159,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
+  height: 20px;
+  padding: 5px 5px;
+  font-size: 10px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4187,7 +4187,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -4379,8 +4379,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #f8f8f800;
+  border-color: #e7e7e700;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -5611,7 +5611,7 @@ a.list-group-item-danger.active:focus {
   border-color: #ebccd1;
 }
 .panel-danger > .panel-heading {
-  color: #a94442;
+  color: #3adaf0;
   background-color: #f2dede;
   border-color: #ebccd1;
 }
@@ -6269,8 +6269,8 @@ button.close {
     bottom: 20px;
   }
 }
-.clearfix:before,
-.clearfix:after,
+.clearfix banner:before,
+.clearfix banner:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
 .container:before,
@@ -6302,7 +6302,7 @@ button.close {
   display: table;
   content: " ";
 }
-.clearfix:after,
+.clearfix banner:after,
 .dl-horizontal dd:after,
 .container:after,
 .container-fluid:after,

@@ -33,7 +33,7 @@ body:after {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 
 .lightbox a img {
@@ -51,7 +51,7 @@ body:after {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .lb-outerContainer:after {
