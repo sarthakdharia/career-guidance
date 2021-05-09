@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed | Education</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/font.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/slick.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/theme.css">
+<link rel="stylesheet" type="text/css" href="../assetsnews/css/style.css">
+
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<!-- <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a> -->
+<div class="container">
+  <header id="header">
+    <div class="row">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="../news.html" class="logo"><img src="../images/logo.jpg" alt=""></a></div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Latest News</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="https://www.indiatoday.in/education-today/news/story/cbse-class-12-board-exam-2021-may-get-postponed-till-july-1799735-2021-05-07"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">CBSE Class 12 Board Exam 2021 may get postponed till July</a></li>
+            <li><a href="https://www.livemint.com/education/news/govt-postpones-neet-pg-for-at-least-4-months-incentivise-students-to-join-covid-duty/amp-11620035062066.html"><img src="https://images.livemint.com/img/2021/05/03/600x338/034f60c0-e07e-11ea-91d8-498ef3713802_1598154595981_1598154617487_1620035346171.jpg" alt="">Govt postpones NEET-PG for at least 4 months</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/news/creative-courses-after-12th/articleshow/82423752.cms"><img src="C:\Users\aditi\Downloads\NewsFeed Free Website Template - Free-CSS.com\newsfeed\images\featured_img3.jpg" alt="">New creative courses after 12th</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/news/online-learning-doesnt-improve-student-sleep-habits-says-study/articleshow/82456480.cms"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">Online learning doesn't improve student sleep habits</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/admissions/std-xi-process-set-to-begin-from-july-15/articleshow/76741514.cms"><img src="data:image/png;base64,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" alt="">Maharashtra class 11 admission process set to begin from July</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/times-study-abroad/top-news/top-countries-to-study-abroad-after-covid-19/articleshow/82066800.cms"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">Top countries to study abroad after Covid-19?</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_page">
+            <ol class="breadcrumb">
+              <li><a href="../news.html">Home</a></li>
+              
+              <li class="active">Education</li>
+            </ol>
+            <p></p>
+            <h1>Studying at home due to Covid-19? Check these tips to ace the exam</h1>
+           
+            <div class="single_page_content"> <img class="img-center" src="data:image/jpeg;base64,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" alt="">
+              
+              <p>NEW DELHI: With most of the offline classes suspended and exams being postponed, many students have come face to face with some of the stress and challenges of self studying at home. Schools, varsities, coaching classes - all have moved to e-learning platforms which may be new for many students. When it comes to study from home, the biggest challenge is finding a quiet corner to study and ace those multiple tests and final exams. Most of all will agree that studying from home is not easy, but strong planning and building a favourable study environment is what you need to ace any exams in this pandemic era.</p>
+              <p><em>Here are some of the 'study from home' tips that will help you prepare and ace your upcoming exams:</em></p>
+              <ul>
+                <li><strong>Organize your study desk</strong></li>
+                    <p>Clear any clutter around your study area and organized your books, writing pads, pen and pencils etc. A nice and tidy study space will help you concentrate and make way to absorb new concepts and ideas. You may use small sticky notes to write down keys to the answers, concepts and ideas. Also, prepare a study time table and give each subjects a slot. Set your goals for each subjects/concepts and try to complete it in the assigned timeline</p>
+                <li><strong>Create a study corner</strong></li>
+                    <p>It's very important that you have a dedicated space for study where you can distance yourself from family. Studying on bed and sofas are big no! Use proper study table and chair to concentrate better and avoid any posture-related pains. Also, do not keep every thing very close to your study desk. Organize your study room in a manner that you have enough room to move, reach around for your books and other study material. Also, make sure your study room is well-lit. You can also keep some indoor plants to help purify the air and brighten up the room.</p>
+                <li><strong>Revise and Practice</strong></li>
+                     <p>Once you complete your syllabus do not relax and be carefree. Keep revising your syllabus from time to time to ace in the examination. If you are stuck on any concept or topic, ask questions to your teacher during online class or use student discussion forum to discuss it with your peers. It's also very important to practice mock tests and sample papers to know how well you have prepared. The main objective of analyzing a mock test is to identify your strong and weak areas. Then again, revise and practice your weak areas to ace in the final exams.</p>
+                <li><strong>Eat Healthy and Exercise</strong></li>
+                     <p>Having healthy/nutritious food is very important for you brain to function its best. Also make sure you keep drinking water from time to time to keep yourself well hydrated. Everyday, do some form of exercise to keep your body and brain fit. Several scientific study suggests that healthy diet and regular exercise can improve memory and learning. Also, make sure you sleep for at least 6 to 8 hours to re-energize your body and mind.</p>
+              </ul>
+              </div>
+             
+            <!-- <div class="related_post">
+              <h2>Related Post </h2>
+              <ul class="spost_nav wow fadeInDown animated">
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../images/post_img1.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../images/post_img2.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../images/post_img1.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="latest_post">
+          <h2><span>Latest post</span></h2>
+          <div class="latest_post_container">
+            
+            <ul class="latest_postnav">
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="https://i2.wp.com/engineeringhint.com/wp-content/uploads/2017/01/50-Top-Mechanical-Engineering-Colleges-In-India.png?fit=700%2C400"> </a>
+                  <div class="media-body"> <a href="https://www.usnews.com/education/best-global-universities/india/engineering" class="catg_title"> Best Engineering colleges in India</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="http://localhost:52330/images/3fa220a6-9eb7-11eb-bcc6-91c576c9961b_1618594907331_1620123536831.webp"> </a>
+                  <div class="media-body"> <a href="https://www.livemint.com/education/news/jee-main-may-2021-session-postponed-amid-covid-surge-education-minister/amp-11620123218302.html" class="catg_title"> JEE (Main) - May 2021 session postponed amid Covid surge: Education Minister</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="http://localhost:52330/images/918948-narendra-modi-1.webp"> </a>
+                  <div class="media-body"> <a href="https://zeenews.india.com/india/you-represent-the-aspirations-of-130-crore-people-pm-narendra-modi-tells-students-at-iit-kharagpur-2343784.html" class="catg_title"> PM Narendra Modi urges students at IIT Kharagpur</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="http://localhost:52330/images/1617422790_exams3_2_1200x768.webp"> </a>
+                  <div class="media-body"> <a href="https://www.livemint.com/education/news/cbse-announces-marking-scheme-for-class-10-results-by-20-june-5-points/amp-11619937841911.html" class="catg_title"> CBSE announces marking scheme for Class 10, results by 20 June: 5 points</a> </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="http://localhost:52330/images/3fa220a6-9eb7-11eb-bcc6-91c576c9961b_1618594907331_1620123536831.webp"> </a>
+                  <div class="media-body"> <a href="https://timesofindia.indiatimes.com/home/sunday-times/climate-change-has-now-entered-the-classroom/articleshow/71253635.cms" class="catg_title"> Climate change has now entered the classroom</a> </div>
+                </div>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+        <aside class="right_content">
+          <div class="latest_post">
+          <h2><span>Category</span></h2>
+              
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="scinews.html">Science</a></li>
+                  <li class="cat-item"><a href="commnews.html">Commerce</a></li>
+                  <li class="cat-item"><a href="artsnews.html">Arts</a></li>
+                  <li class="cat-item"><a href="#">Technology</a></li>
+                  <li class="cat-item"><a href="pages/single_page.html">Education</a></li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="video">
+                <div class="vide_area">
+                  <iframe width="100%" height="250" src="http://www.youtube.com/embed/h5QWbURNEpA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="comments">
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  <!-- <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Flickr Images</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Tag</h2>
+            <ul class="tag_nav">
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Life &amp; Style</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Photo</a></li>
+              <li><a href="#">Slider</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <address>
+            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2045 <a href="../news.html">NewsFeed</a></p>
+      <p class="developer">Developed By Wpfreeware</p>
+    </div>
+  </footer>  -->
+</div>
+<script src="../assetsnews/js/jquery.min.js"></script> 
+<script src="../assetsnews/js/wow.min.js"></script> 
+<script src="../assetsnews/js/bootstrap.min.js"></script> 
+<script src="../assetsnews/js/slick.min.js"></script> 
+<script src="../assetsnews/js/jquery.li-scroller.1.0.js"></script> 
+<script src="../assetsnews/js/jquery.newsTicker.min.js"></script> 
+<script src="../assetsnews/js/jquery.fancybox.pack.js"></script> 
+<script src="../assetsnews/js/custom.js"></script>
+</body>
+</html>

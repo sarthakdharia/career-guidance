@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/font.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assetsnews/css/style.css">
+
+</head>
+<body>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <div class="container">
+    <header id="header">
+      <div class="row">  
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="header_bottom">
+            <div class="logo_area"><a href="../news.html" class="logo"><img src="../images/logo.jpg" alt=""></a></div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <!-- <li class="active"><a href="news.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li> -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="scinews.html">Science</a></li>
+          <li><a href="commnews.html">Commerce</a></li>
+          <li><a href="artsnews.html">Arts</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Latest News</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="https://www.indiatoday.in/education-today/news/story/cbse-class-12-board-exam-2021-may-get-postponed-till-july-1799735-2021-05-07"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">CBSE Class 12 Board Exam 2021 may get postponed till July</a></li>
+            <li><a href="https://www.livemint.com/education/news/govt-postpones-neet-pg-for-at-least-4-months-incentivise-students-to-join-covid-duty/amp-11620035062066.html"><img src="https://images.livemint.com/img/2021/05/03/600x338/034f60c0-e07e-11ea-91d8-498ef3713802_1598154595981_1598154617487_1620035346171.jpg" alt="">Govt postpones NEET-PG for at least 4 months</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/news/creative-courses-after-12th/articleshow/82423752.cms"><img src="images\featured_img3.jpg" alt="">New creative courses after 12th</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/news/online-learning-doesnt-improve-student-sleep-habits-says-study/articleshow/82456480.cms"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">Online learning doesn't improve student sleep habits</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/admissions/std-xi-process-set-to-begin-from-july-15/articleshow/76741514.cms"><img src="data:image/png;base64,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" alt="">Maharashtra class 11 admission process set to begin from July</a></li>
+            <li><a href="https://timesofindia.indiatimes.com/home/education/times-study-abroad/top-news/top-countries-to-study-abroad-after-covid-19/articleshow/82066800.cms"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/1617422790_exams3_2_1200x768.jpeg?wHRYKkV3aCxr_LVyZul5gu6xpnFF1GOe&size=770:433" alt="">Top countries to study abroad after Covid-19?</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sliderSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="slick_slider">
+          <div class="single_iteam"> <a href="pages/single_page.html"> <img src="images\tips_for_taking_classes_online_article_image-1.png" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/single_page.html">Studying at home due to Covid-19? Check these tips to ace the exams</a></h2>
+              <p></p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="https://www.businesstoday.in/current/economy-politics/centre-asks-iits-nits-iiits-cus-to-postpone-all-offline-exams-scheduled-in-may/story/438181.html"> <img src="images\exam_660x450_030521095109.webp" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://www.businesstoday.in/current/economy-politics/centre-asks-iits-nits-iiits-cus-to-postpone-all-offline-exams-scheduled-in-may/story/438181.html">Centre asks IITs, NITs, IIITs, CUs to postpone all offline exams scheduled in May</a></h2>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="https://www.livemint.com/education/news/delhi-govt-writes-to-cbse-seeks-more-time-to-compile-class-10-results/amp-11620216791495.html"> <img src="images\034f60c0-e07e-11ea-91d8-498ef3713802_1598154595981_1598154617487_1620035346171.webp" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://www.livemint.com/education/news/delhi-govt-writes-to-cbse-seeks-more-time-to-compile-class-10-results/amp-11620216791495.html">Delhi govt writes to CBSE, seeks more time to compile Class 10 results</a></h2></div>
+          </div>
+          <div class="single_iteam"> <a href="https://m.timesofindia.com/home/education/news/aicte-academic-calendar-2021-22-released-check-important-dates-here/amp_articleshow/82449148.cms?utm_campaign=AMP_InfiniteScroll&utm_medium=articleshow&utm_source=organic&ps=2"> <img src="images\featured_img3.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="https://m.timesofindia.com/home/education/news/aicte-academic-calendar-2021-22-released-check-important-dates-here/amp_articleshow/82449148.cms?utm_campaign=AMP_InfiniteScroll&utm_medium=articleshow&utm_source=organic&ps=2">AICTE academic calendar 2021-22 released, check important dates here</a></h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="latest_post">
+          <h2><span>Latest post</span></h2>
+          <div class="latest_post_container">
+            
+            <ul class="latest_postnav">
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="https://i2.wp.com/engineeringhint.com/wp-content/uploads/2017/01/50-Top-Mechanical-Engineering-Colleges-In-India.png?fit=700%2C400"> </a>
+                  <div class="media-body"> <a href="https://www.usnews.com/education/best-global-universities/india/engineering" class="catg_title"> Best Engineering colleges in India</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="images\3fa220a6-9eb7-11eb-bcc6-91c576c9961b_1618594907331_1620123536831.webp"> </a>
+                  <div class="media-body"> <a href="https://www.livemint.com/education/news/jee-main-may-2021-session-postponed-amid-covid-surge-education-minister/amp-11620123218302.html" class="catg_title"> JEE (Main) - May 2021 session postponed amid Covid surge: Education Minister</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="images\918948-narendra-modi-1.webp"> </a>
+                  <div class="media-body"> <a href="https://zeenews.india.com/india/you-represent-the-aspirations-of-130-crore-people-pm-narendra-modi-tells-students-at-iit-kharagpur-2343784.html" class="catg_title"> PM Narendra Modi urges students at IIT Kharagpur</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="images\1617422790_exams3_2_1200x768.webp"> </a>
+                  <div class="media-body"> <a href="https://www.livemint.com/education/news/cbse-announces-marking-scheme-for-class-10-results-by-20-june-5-points/amp-11619937841911.html" class="catg_title"> CBSE announces marking scheme for Class 10, results by 20 June: 5 points</a> </div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="media"> <a href="" class="media-left"> <img alt="" src="data:image/jpeg;base64,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"> </a>
+                  <div class="media-body"> <a href="https://timesofindia.indiatimes.com/home/sunday-times/climate-change-has-now-entered-the-classroom/articleshow/71253635.cms" class="catg_title"> Climate change has now entered the classroom</a> </div>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="fashion_technology_area">
+          <div class="fashion">
+            <div class="single_post_content">
+              <h2><span>Science</span></h2>
+              <ul class="business_catgnav wow fadeInDown">
+                <li>
+                  <figure class="bsbig_fig"> <a href="https://timesofindia.indiatimes.com/city/hyderabad/private-engg-colleges-witness-jump-in-campus-placements/articleshow/82442385.cms" class="featured_img"> <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSboqqbprhmbY1dc0gTu-j2x9nviEmoehxSeQ&usqp=CAU"> <span class="overlay"></span> </a>
+                    <figcaption> <a href="https://timesofindia.indiatimes.com/city/hyderabad/private-engg-colleges-witness-jump-in-campus-placements/articleshow/82442385.cms">Private engineering colleges witness jump in campus placement</a> </figcaption>
+                    <p> In this raging pandemic, top private engineering colleges has witnessed 30 percent jump in compus placement.</p>
+                  </figure>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="technology">
+            <div class="single_post_content">
+              <h2><span>Commerce</span></h2>
+              <ul class="business_catgnav">
+                <li>
+                  <figure class="bsbig_fig wow fadeInDown"> <a href="https://www.rojgarsamachar.in/2021/03/new-rules-now-commerce-students-can-also-do-engineering-maths-and-physics/" class="featured_img"> <img alt="" src="http://enathirajappacollege.com/images/2020/02/17/commerce.jpg"> <span class="overlay"></span> </a>
+                    <figcaption> <a href="https://www.rojgarsamachar.in/2021/03/new-rules-now-commerce-students-can-also-do-engineering-maths-and-physics/">New Rules: Now Commerce students can also do Engineering, Maths and Physics</a> </figcaption>
+                    <p>AICTE asked the universities to provide bridge courses in Maths, Physics, Engineering Drawing to students coming from different backgrounds.</p>
+                  </figure>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+          <div class="fashion_technology_area">
+            <div class="fashion">
+              <div class="single_post_content">
+                <h2><span>Arts</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="https://timesofindia.indiatimes.com/city/nagpur/online-classes-depriving-hotel-mgmt-students-of-practicals/articleshow/82316230.cms" class="featured_img"> <img alt="" src="https://images.shiksha.com/mediadata/images/articles/1534847680phpkbwmRB.jpeg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="https://timesofindia.indiatimes.com/city/nagpur/online-classes-depriving-hotel-mgmt-students-of-practicals/articleshow/82316230.cms"></a>Online classes depriving hotel management students of practicals</figcaption>
+                      <p>Online-only mode of colleges has hit hotel management students, as a major part of their degree course relies on practical training.</p>
+                    </figure>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+            <div class="technology">
+              <div class="single_post_content">
+                <h2><span>Technology</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="https://www.bbc.com/news/science-environment-57004604" class="featured_img"> <img alt="" src="https://cdni0.trtworld.com/w960/h540/q75/76923_USASpaceX_1587156063102.jpeg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="https://www.bbc.com/news/science-environment-57004604">SpaceX Starship prototype makes clean landing</a> </figcaption>
+                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                    </figure>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          <div class="single_post_content">
+           
+          </div>
+          <div class="single_post_content">
+            
+            
+             
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="https://content.techgig.com/iit-bombay-offers-a-free-online-course-on-android-app-development/articleshow/82426907.cms" class="media-left"> <img alt="" src="https://content.techgig.com/thumb/msid-82427158,width-860,resizemode-4/IIT-Bombay-offers-a-free-online-course-on-Android-App-Development.jpg?253686"> </a>
+                  <div class="media-body"> <a href="https://content.techgig.com/iit-bombay-offers-a-free-online-course-on-android-app-development/articleshow/82426907.cms" class="catg_title"> IIT Bombay offers a free online course on Android App Development</a> </div>
+                </div>
+              </li>
+              <li>
+
+                <div class="media wow fadeInDown"> <a href="https://content.techgig.com/must-have-skills-for-data-scientist-and-ml-engineer/articleshow/82406473.cms" class="media-left"> <img alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIREhUTEhIVEhIWGBUYFRYVFRkYFRgXFRYXFxcYFxcYKCggGBolHBgXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGi0lICUvLS0tLS8yMC0tLS0tLS0tLS0tLS0uLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAYDBQcCAQj/xABQEAABAwEDBQwFBgsGBwEAAAABAAIDEQQSIQUGMUFRBxMUIjJSYXGRkqHRcoGxssEVIzRTc8IWFzNCVGKCk8PS8CRjZHSz4UNEg5Si0/El/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EADURAAIBAgQCBgkEAwEAAAAAAAABAgMRBBIhMUFRE2GBkbHwFCIzUnGhstHhBRUyNCPB8ST/2gAMAwEAAhEDEQA/ALyiIvSPNCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIt5DkJpaC57qkY0pRZPkFnPf4eSy6eBr0MyvorB8gs57/DyT5BZz3+HknTwJ6GZX0Vg+QWc9/h5J8gs57/AA8k6eA6GZX0Vg+QWc9/h5J8gs57/DyTp4DoZlfRTcqWAQkUNQ4GldOGn2qEtIyUldGbTTswiIpKhF8X1AERe96OxAeERzSNKISEREICIiAIiIAiIgC9RRlxAaKkrypWTW1c7GnF+I+FVEnZXJSu7EhuT2gCpJds5I0kYVHR0L0bIwilzGprQmo0bcB2LPEJKkYEVAYAXB1Kca+NocToOiiwWNkL5ZJY6Oe6kcjqml6I0pQ4CmGrZp18+Zm+VciNaLFTFrq7Rs9etR95K2sswANCCSCKUGFdOIwUYuZzXd4eS0jJ21KSjHgQXNovhUmW4SAQ4dNa06SKYhR5GEEgjELSLM5KxtM486GWHeg+N777SRdIwu3dNetaj8ZUP1Eva3zWu3VuVZfRk9rFRFOHw1OdNSa1/LOfE42tTqyjF6K3DqTOmfjKh+ol7W+afjKh+ol7W+a5mvhIC19DpcjD9xr813HTfxlQ/US9rfNPxlQ/US9rfNcyX1PQ6XIfuFfmu46Z+MqH6iXtb5p+MqH6iXtb5rmaKfQ6XIP9Rr813HYMq2kTR2eUAgSNvgHSA4MND2rWqW4Vs1j+xb7kaxbwOlctPSPf4s9KonmfZ4GFT4Gb1SovSO0N2DaV6jhEWJxfqB1dJ6V5Mda8bD/iPPsHR0a0lK/w8+eslRa8+dfAjyS0BaDWvKdt14dHtWMQk6KHqI108x47Cvtoe0nitugYdJ6SsaskUbJlhspe6600q03qt0AgdukEdSmWyyXLoLuLjjTGuGr+tCiZJtVyQVPFNQeioHkOxSMu2ipbdPFxx6f/AJ7Vm82e3A0WXJc11p1LGvpdVfFqjJhF7EZK+OjIU3B5REQgIiIDW5wZZjscO+yBzhUNDW0qXGuArQaAT6lT5d05ofxbMTHtdIA+nogEA9FfWrdnJkZtsgdE4kGocwjU9taadWJB6CVI3Lc1bIyyiYxiSWTCUTMaXRyR1jljbUYNvh3XhicFSpNQV2aQg5s+ZHymy1QsmjrcfWl4UIIJaQeoghTmkg1GBGhSrXCxkzmsa1jRSjWgBo4orQDAY1X1rCdAJ6gmbS5Djq0SWWtrgNLXOcRow/NqBTrCwS2gXi1gAbjUgUr/ALHxXl7XgUuOrjQ0OF4AHCmmg8VgZC8fmO7pVVFeWWcmZ1khhJxqAMdJA0BRXucNLSOsEKYTWNhpztX+3xKS2Cse5bKa4Fp1cobSPgsPKH6wGHSNnWPZ1LJYxx29Y/rWvJpewa6tdTgPu4KFdFmVvdX5Vm9CT2xqhrqOfk910Hzj2Va/kTmOuLBjRjr2no1qq/KDfr5f+8f/AOpdGHqNUkrebs8/F0YyrSblbbwXWVhX+wZYs+TX2KzCzufJbGsc6YAaZSAAK4uDScQCKNocSVpjlBv6RLr/AOcf0/3XR4hTck57Nsb4YJLj7LUtEt8vfCDeAq66LzajYKNcMTSijEZqkdtuHP8A5y4k4RQpT/krvRdX/ef3JO6ZkeOLe542hhe4tkDRQE0vNdhgDg6u31KiLo+6HlqN9mayGaN4e4Xw1zXG60XgdZbjTFc4WuFcuiWYwxyiqzy9QX0tOGBx0YacaYbcQR6lOyPkaa1ucyFocWtvGpAFKgaTr8iukTzRWSyQG3sbJLGAGNDQ51RqbXDBt2prSo6larXUGkld8uJSjhnUi5N5Ulu9jJaGGNtnhd+UZE0Opo0BuB14sPgvUEoFTpdq2A6/WoeXr8whniJbvkTSGg8ah41Nh5Xgtdku2MjbddUOLscPV6l8/wCn9FVVKtHKvW9Zuydnw67uzvba+p9T6D0lJ1aLzP1fVSu1da35LitNb9Ruq1OJ06SvlscSAACGjQPielfSKLJLoC9TZnm8CtZx5Ft9qY1limbC4EmS84svNOAuvAJBB2U06cFzi3ut+R7YxlomLnENkc0SukY+MuLTUO18V2NKhd2yPIGvNTSopjtqFq90PJRtIs7CWiISiSXDjuEQqxgOoEuNehUzvPYsoLJcxVpoWSN5c6hJJdQevVs1rEtjYbMLrXkG/faRjhcBaT8VpJpLUzim2ai0Nc2ZrDUYGorhXHYpm8dK95Tscj7RvjW1bTTUbNlar2ubDOV6jfvafDLH5Xv8zpxKjanb3fnmlv12semRYaVgm0LLfNFELyV0pM5m0fERFcoEREBms1lc/RgNpU2XKsFjicx8rWPuueNF51Q7ENOnkkeqmxZ8n/k2+v2lUndMj48B2hw7C0/eWcYqrPI9ias3RpOpHfT5ss1qs7mG8TeBOnpO1fWz/NnD84a+hyzWd++WRjtboo3eu6Cog/Jn0m+65I678y8tNuROMUYc1ji4ufdxaeKK1ppxocNWC18rXNcW1Ju6aV6tfSp9jtEjhW61xYK746pIFSTjpNehfbLPxW3ZA0hxLy/S4cWh16tWHhVVTcfPmxZpMgtPzbvSZ7HrJZrTSjS0OGO2uIX1zm8ctAu32UB0U4+Bx0etGjHkx9p6tv8AVVbe9/OiKrqJRtLdIjAINRidRJ8uxYTxR0nqwHmfh0r7Ufqdp81jlOsuBr0qEkWbNDurcqzehJ7Y1Q1fN1blWb0JPbGqGuzCexj2+LPIx39ifZ9KMsL4m1fMXCJgq64AXuxADWVwvEkYnACp1UVyyJkzJeWbPciikgMEjHSCrb7gQ4AOeb15jhe2EFurXzHL8mDW9JJ9WA9pXXNxjJG82IzEUfaHl3TvbKsYO2+79tYYuTWzZ2fp9NW1S1LJljNezWhhaY2MfTiyMaGuadWI0joK4xJGWktdg5pIPWDQ+K/Qi4Llp4NonI0b7L77lXAzbbix+p0opRml1GyzMydLNaW71KIiyjnOvEG6HAOAA5VagEHDFWDdUsjyYZhxog0tJGIa4kEE+kNf6vUqARVdAyfnlZ7LZoYQHTENpKHYXQa1ArUOFTQAYUGnUt6sZqpGpFX4W/P3OahOnKjKlN5eN78eGnjY28rqWWyGtAIW4/sMWgs8w30vukgk0ppFTp6/Nb3OizX5WMabrGxtoByRxnAUAwGAHYFCsVmfG2jm0FcDTTVfPTVfE14JLLGLbUtJXlytfRa262tNT6qDo4ahNyeaUlFON8tovk7O749S30JcjyQ01Osadnr2ELJJO1rS5zgGtBJJOgAVJWGN2kHQfAjQfaOolVXdHyhvNm3oHjzG6PsxQvI6CKD9te3bgeLdrU0mSc6bXbsoWeNkhhidMz5ttOQ119wc7S4lrTXGnQt/ut5elEVjMb3ROkMrzceRgy61oqKVBvk+oKn7mQplGJ/1bJ39kEg+K2e6xJxrEzm2YO77yPurnlJ+kxhwyt/M3hH/AM0pv3kvk7kXNvPeZsjY7S7fI3EC+QA9lcASRg5u2uPTqXTI2VIHb8VwAhdszUylv9jikJq8tuv62G6fWSK9RG1dL02OZdZt4498fQEAkki8aDqqvDqte43rw0UHJw2H+qryipKmpNN8Nt14PX4PQvGbinbjvt/tO3xVmZTN0eKxIiukVuEREICIiA22SzxOonz+Kqe6YPo//V/hq1ZJ5J9L4Ba/O7IjrXE0MLRIx1W3jQEEUcK6tR9SzpyUaqbJrwc6DjHf83JubprZYfs2jsFF5s1keKg0Da62h1aVxAOjrWPJkclnssLXN47RdcNO3WPUvk9sc/ACg2DE+sqtm27GiayxvvZEq0W+40sju48ohopspTQVA4QdjP3bPJViWV151XPFoD6NZjcu3m6q3aUIJ42kgdCsS16JRMlVc/PntR7fMSKYAacGtGjbQY6SvLW10LLGzCtNuNK4AV0Hbj2IRQ4Aio1af66FGi0RbXdmFzadW3UhWS0OxpjpOnppoGzBYyrIho1m6tyrL6MntYqIr3urcqy+jJ7Y1Qyt8J7GPb4s83He3l2fSjR5Wjc+QYFrSQxry03a66HXSpwGxfpnJ1kZDFHFHyI2NY30WgAeAVXzmYxuSKXRQR2e6KaCXR0I6caqnZO3TZLE1sM0O/sDeI4PuvAGAaaghwpTHA9a46ilWjnS2b07j06Uo0Jqk/dTv3nX5ZA1pc40aASSdQAqSuFZoZBteUA+VsdyJ8j3CV+DOM4lwaNLqGugUrhULY5S3SZba18LIRZ46cc3773A/m1oA0HGumu1e8mZ3T2azCzRBjQ2oY+nGaHEuoBorUmhorUKNWEc0bXemvIzxWIoTlkney1058u7j1nrPfNqz2aBsbLQ42sua52GBZQggtB4gqQQTUmlNFSKjZbM5tLz602VxPSSTXqFFNlkLiXOJc4mpJNSSdZJ0ryu6nTa/k7s8yrWzXUUkuX5OtB4FmsdWh3zLMDWnIj2EJaMrPbC9sMLC4g3Wve64SRoJxIH9YLzJ9Gsn2LfcjUVefGKlHXr8We1KTjJ26vBHPcl57ywO3m3RuLm4FwAEg9Juh3WKetV/OfKzrdaasDiwcSJuumkmmok1PUBsXUcsZEgtQAmZUjkuGDx1OGroOC1tgzVs9kbI9l577jwHSEEtBaa3aAAdelbGVim7nDqWt5/w8//AJNDfithus/l7J/kofelUHcyszpbU5jeUYJadJFw09dKetbfdjse9y2QE1Is4Yf2Hn+ZcTUvTb20y/O7Z2qUfQbcXP5WSOfALoW5baqsmi5rmvH7YLT7g7VU807MJbXHG7Q8StPU6GQLdbmDyLTIw4ExGo6WvYPiV2s4UdNREUEhERAEREAREQG4ya2kY6anxp8FWd0POGSxbwY3ll8y14ocDduUrUdKtVjFGN6h44rnO7ZybJ1zeyNYwf8AkNqi/wAdr92hcMg5ZdPY4rQaFz71cKDB726NXJUuPLDgCLjcdOkHtCruYeOSYOgyf68gWxVlCLvdcSueStZ8D3NKHHBjW6dFa47SSV4RFolYo3ckb6K3qiprqxpTBfL4AoCMQNAwr0rzBFXToWXeGqjsWV2YZnDQNAJpTRQ07dCxlSuDtTg7VKkkQ4s0W6tyrL6MntYqGVfd1blWb0JPbGqEV04T2Me3xZ5mP9vPs+lHS89JbuSoRz94HYy991VSyZMtbBHaJsl2Z9jJbebJGx9oZE4j5xxdU1xvEU24NGiVnHnNZrVZoIIX33wlm+gtcKFrLuFRRwqXCo2LqWVJxFDLIRUMY9xG260mnguKTlCnFW3b8Uj1YKM60pclFeLKbnHkGxxWWZ7bPDC5ratdHG1hvVo0VaBWpIFDtXNljzjz2tFvfGxzRDC2Rp3tpJq4HS9x5VNQoB61kXbhk1Fpnm45pzTXIIiLoRwvY6xJ9Gsn2LfcjUVTblbJZTshb7rFCXm09u/xZ9BU/l55BYbZ+Tf6LvdKzLzKy80t2gjtFFcocdzOzhOT7QLQIxKQxzbpdd5VMa0OzYpufGdxym+J5gEJja5uEl+9eIPNbSlOnSq3NFcc5la3SW123TSvgvKZVfNxIzvLl4G8zGP9vg63/wCk9b7M+K5lW0t2C0dm/Mp4UWnzAsxfbWEGm9te/RpwuU6OXX1LqVgzVgjfLbo5y98gLXtq0saS5t5oIxDgWgUJ2pKSW4jFvYkoiIAiIgCIiAIiKQb+AcVvUPYub7tY+bsp/XlHa1nksue2eFqsboRDvd17X1vsriwt0UI5yq+XsvT5QsJknDKwzsAuNLcHxuBrUnWWrGMGpXNZTTi0Xzc6xyTH0GbwmeVsFz7c0yxOZDZt8O8NikcGAAcYyMJJNKnlHSaLosMd4q9st7lG81rGNFL4O3pX1sQGpMwys+QMoFlRFQuF8K+r4UBXt1flWb0Jf4aoavm6vyrN6Ev8NUNdmE9jHt8WeTjv7Euz6Ua/JlmuXiRiQAa7QXXvVoK79nbJdsc52sI73F+K4e/QV1TPTLtmksdpiitEUkrbgcxj2ucPnWB1QDqxB2LHEw9emlz+x1YSq8taT5LwkcGlF2Y9En3qhWdVzK7aSk7aHwHkrGumnuzkxDvGD6vsERFqjlex15n0Szf5dvuMWvWyg+i2X7FnusWHem7F5cHZd/ifQ1FdkNApu8t2LBNDTELRSKWOCZS/LS/aSe+VmteT7kEE1Sd+37CmA3p4bp11+CxZV/Lzfay++5WrOKy0yXYnbCD6pWOf7aK5mVnI2VpLLJvsV29dLeMKihIJww2Bbj8N7ZvbYrzLjXBwF00qH3hhWnKVRLyCetet9KrmROU6Fm5nnaZrTFFIIyx5INGkHkkgg12hdCXFMy3k2+z1559xy7Wl7k2sEREAREQBEX1jCdCEnP8AdVb9GP2w7d78lrMmwE5ItR/vmEfsmHzK2+6yy6LMDr37w3rzXyw2QjIUjudfd2TBv3UvoRbU1m5i3+1POyF3jJGuoxSXSud7k9nvSzu2MYO85x+6ukcGO0I2gkzJwgdKyg1Ubgx2hSWNoKLNpcDRN8T6iIoJC+FfUKAru6vyrN6Ev8NUNXzdX5Vm9CX2xqhrswvsY9vizycb/Yl2fSj4RVSsp5gT5PIlllifGHXY7l6+6rXGrmkUbgNFTiV4sLayMG1zR2kBX3dZmws7Ol5Pquge0qKrfSwiuN/kXoJKhUk+q3boccy6ykldrQeyo+AW+Y2gA2ADsWozgGLOo+3/AHW5WsV60jKq704dv+giItEcz2OwQfRbL9iz3WLyvUH0Wy/Ys91i8ryY7d/ifRy3C8yNqKL0gVip+e8sH5+f7WX33Lpedthpky4B+SZCfUwtB8Krnttgv217NN60vb3piPiu4ZUsLZYZY6Djse3vNI+K1k7GUVc4bm5khlqtLYXvcwPD6FtK1a0upj1FXT8WVn+vm7GeSq2Yp/t9mrrcR2xvHxXZJo7p6EdrhN2KjkbMOCzTMmEsr3MJIDroFSCMaCutWxEQkIiIQEREAU2JlAoSnMdUVVZFonN92B3Gso2Cc9pi8lubZZ97yHdIoeDMJHS664+JK0W6uwyWizRN5TmkDrkeGjxCuWeTA3J9oaNAioOoUonBE8WVnchh4loftdG3utcfvroSpm5TBdsbnc+Z59QaxvtBVzVZbkx2CIigkIiIAiL4gNbuhZFtFpdAYIjIGteHUc0UvXacojYVU/wLt/6Mf3kX8y6zHlCOgqaGmihXv5Qi53gfJVp4ipCKio7fH7lauCpVZubk9etcrcjleTM0LcyaJz4CGh7C4348Gh4JODtlVvt0DIlqtM7HQwmSNsYFQ5g4xc4kUcQdF1Xb5Qi53gfJOHx87wPkjxFRzU8q002/IWDpKm6eZ2bT3XDsOI5XzEyk+5dsrjStfnYtdNruhbL8C7f+jH97F/MuucPj53gfJPlCLneB8lZYuqnfKu78kPA0XFRcnp1rj2HI/wAC7f8Aox/exfzJ+Bdv/Rj+9i/mXXPlCLneB8k+UIud4HyVvTKvur5/cp+3UPefevsaZsLo7PZ2PF17Y2tcMDRzWsBFRhpWNTMp2lryLuIFceunkoayhe2p0StfTzwCIiuVOKWSG/la7/jHHuzlx9i7UuTZGs//AO44bLRaXeErh7QutK0+BWPE4rkyHecrNZou2otHUZCB4ELsNr1ev4Ll2XYN7y2zY60WVw/aMYPiHLrDmg6VMuDIjxRBRS95bs8SsM8QGIUqQsYkRFJUIiIAvUchavKISVHPDNWa22ls8c7YrjGNaCHVDmOc68CNGLvBbfKVgtNosD7NLKwzvoDK1pDSBI12LdpaKGi26KMqJzMpGRM1soWMneLaxrTpY5jnRk7bp0HpFCr5BaTdbfpfoL13k3qY3a40rWlViRMozMkcJGwpwkbCo6JlQzMk8JGwr5wkbCo6JlQzMlcJGwpwkbCoqJlQzMlcJGwpwkbCoqJlQzMlcJGwpwkbCoqJlQzMlcJGwpwkbCoqJlQzMlcJGwpwkbCoqJlQzMlcJGwpwkbCoqJlQzMk8JGwqp5ableVzxDLZoIqm4W399u6rzi0gOP6oFNutWNEyoZmULNfNC12e2R2maWN4BeZKPkc91+NzfzmipqQcTqV4y1abRvf9kEW+1GM964G41IDMS7RsGJ6llRMqCkznn4IZQktcdpnnhe5skT3EOfg2N4dRrbgAAAwGHxXTeEjYVFRMqF2SuEjYVimlvdSxImVC7CIikqEREAREUgIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIC48GZzG90JwZnMb3QiLiO0cGZzG90JwZnMb3QiIBwZnMb3QnBmcxvdCIgHBmcxvdCcGZzG90IiAcGZzG90JwZnMb3QiIBwZnMb3QnBmcxvdCIgHBmcxvdCcGZzG90IiAcGZzG90JwZnMb3QiIBwZnMb3QnBmcxvdCIgHBmcxvdCcGZzG90IiAcGZzG90JwZnMb3QiIBwZnMb3QnBmcxvdCIgHBmcxvdCcGZzG90IiAcGZzG90JwZnMb3QiIBwZnMb3QnBmcxvdCIgHBmcxvdCcGZzG90IiAcGZzG90IiID/2Q=="> </a>
+                  <div class="media-body"> <a href="https://content.techgig.com/must-have-skills-for-data-scientist-and-ml-engineer/articleshow/82406473.cms" class="catg_title"> Must-have skills for Data Scientist and ML Engineer</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="https://www.thehindu.com/news/national/andhra-pradesh/law-students-advised-to-study-technology/article34509645.ece" class="media-left"> <img alt="" src="https://blog.ipleaders.in/wp-content/uploads/2018/05/AF3D185F-7BB0-469B-BE90-AC300CDA4D79.jpeg"> </a>
+                  <div class="media-body"> <a href="https://www.thehindu.com/news/national/andhra-pradesh/law-students-advised-to-study-technology/article34509645.ece" class="catg_title"> Law students advised to study technology</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="https://timesofindia.indiatimes.com/city/delhi/after-du-jnu-students-too-want-classes-suspended/articleshow/82442568.cms" class="media-left"> <img alt="" src="images\82449308.jpg"> </a>
+                  <div class="media-body"> <a href="https://timesofindia.indiatimes.com/city/delhi/after-du-jnu-students-too-want-classes-suspended/articleshow/82442568.cms" class="catg_title"> After DU, JNU students too want classes suspended</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_sidebar">
+            <aside class="right_content">
+              <div class="latest_post">
+              <h2><span>Category</span></h2>
+                  
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="scinews.html">Science</a></li>
+                  <li class="cat-item"><a href="commnews.html">Commerce</a></li>
+                  <li class="cat-item"><a href="artsnews.html">Arts</a></li>
+                  <li class="cat-item"><a href="#">Technology</a></li>
+                  <li class="cat-item"><a href="pages/single_page.html">Education</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <!-- <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Flickr Images</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Tag</h2>
+            <ul class="tag_nav">
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Life &amp; Style</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Photo</a></li>
+              <li><a href="#">Slider</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <address>
+            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2045 <a href="news.html">NewsFeed</a></p>
+      <p class="developer">Developed By Wpfreeware</p>
+    </div>
+  </footer> -->
+</div>
+<script src="assetsnews/js/jquery.min.js"></script> 
+<script src="assetsnews/js/wow.min.js"></script> 
+<script src="assetsnews/js/bootstrap.min.js"></script> 
+<script src="assetsnews/js/slick.min.js"></script> 
+<script src="assetsnews/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assetsnews/js/jquery.newsTicker.min.js"></script> 
+<script src="assetsnews/js/jquery.fancybox.pack.js"></script> 
+<script src="assetsnews/js/custom.js"></script>
+</body>
+</html>
